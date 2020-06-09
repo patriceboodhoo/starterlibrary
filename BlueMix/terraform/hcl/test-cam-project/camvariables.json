@@ -1,0 +1,73 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-ibm_compute_vm_instance.sample_server",
+      "label": "Instances - ibm_compute_vm_instance.sample_server"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "instances",
+      "label": "Instances"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "sample_server_domain",
+      "label": "Sample Server Domain",
+      "description": "The domain for the computing instance.",
+      "type": "string",
+      "default": "cam.ibm.com",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "sample_server_hostname",
+      "label": "Sample Server Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "sample_server_datacenter",
+      "label": "Sample Server Datacenter",
+      "description": "The location of the Data Center where the server will be deployed",
+      "type": "string",
+      "default": "lon02",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [  {
+    "name": "ibm_compute_vm_instance.sample_server / ipv4_address",
+    "label": "ibm_compute_vm_instance.sample_server / ipv4_address",
+    "description": "",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": ""
+  } ]
+}
