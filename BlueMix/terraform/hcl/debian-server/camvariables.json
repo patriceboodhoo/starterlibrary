@@ -4,8 +4,8 @@
   "output_namespace": "",
   "input_groups": [
     {
-      "name": "Instances-ibm_compute_vm_instance.sample_server",
-      "label": "Instances - ibm_compute_vm_instance.sample_server"
+      "name": "Instances-ibm_compute_vm_instance.debian-server",
+      "label": "Instances - ibm_compute_vm_instance.debian-server"
     },
     {
       "name": "Other",
@@ -19,8 +19,8 @@
   "output_groups": [ ],
   "template_input_params": [
     {
-      "name": "sample_server_domain",
-      "label": "Sample Server Domain",
+      "name": "debian-server_domain",
+      "label": "Debian Server Domain",
       "description": "The domain for the computing instance.",
       "type": "string",
       "default": "cam.ibm.com",
@@ -33,8 +33,8 @@
       "immutable_after_create": false
     },
     {
-      "name": "sample_server_hostname",
-      "label": "Sample Server Hostname",
+      "name": "debian-server_hostname",
+      "label": "Debian Server Hostname",
       "description": "The hostname for the computing instance.",
       "type": "string",
       "default": "",
@@ -47,9 +47,9 @@
       "immutable_after_create": false
     },
     {
-      "name": "sample_server_datacenter",
-      "label": "Sample Server Datacenter",
-      "description": "The location of the Data Center where the server will be deployed",
+      "name": "debian-server_datacenter",
+      "label": "Debian Server Datacenter",
+      "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
       "type": "string",
       "default": "par01",
       "regex": "",
@@ -57,18 +57,17 @@
       "required": true,
       "secured": false,
       "hidden": false,
-      "immutable": false,
+      "immutable": true,
       "immutable_after_create": false
     }
   ],
   "template_output_params": [  {
-    "name": "ibm_compute_vm_instance.sample_server / ipv4_address",
-    "label": "ibm_compute_vm_instance.sample_server / ipv4_address",
+    "name": "ibm_compute_vm_instance.debian-server / ipv4_address",
+    "label": "ibm_compute_vm_instance.debian-server / ipv4_address",
     "description": "",
     "group_name": "",
     "secured": false,
     "hidden": false,
-    "shortname": "",
-    "type": "string"
+    "shortname": ""
   } ]
 }
